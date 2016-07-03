@@ -1,3 +1,7 @@
-document.write('welcome to my app');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Comments from './app/comments';
+import commentsData from './app/comments-data';
 
-console.log('app loaded');
+const appElem = document.getElementById('app');
+ReactDOM.render(<Comments data={commentsData} />, appElem);
