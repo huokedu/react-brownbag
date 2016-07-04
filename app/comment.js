@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Comment extends React.Component {
+export default class extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -16,5 +16,3 @@ class Comment extends React.Component {
       );
     }
 }
-
-export default Comment;

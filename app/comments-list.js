@@ -1,7 +1,7 @@
 import React from 'react';
 import Comment from './comment';
 
-class CommentsList extends React.Component {
+export default class extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -22,9 +22,3 @@ class CommentsList extends React.Component {
     );
   }
 }
-
-CommentsList.propTypes = {
-  data: React.PropTypes.array.isRequired,
-};
-
-export default CommentsList;

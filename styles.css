@@ -10,7 +10,7 @@ body {
     padding: 40px;
 }
 
-.comments__title {
+.comments h1 {
     border-bottom: 1px solid #333;
     font-size: 30px;
     font-weight: 900;

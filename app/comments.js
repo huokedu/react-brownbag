@@ -2,7 +2,7 @@ import React from 'react';
 import CommentForm from './comment-form';
 import CommentsList from './comments-list';
 
-class Comments extends React.Component {
+export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class Comments extends React.Component {
   render() {
     return (
       <div className="comments">
-        <h1 className="comments__title">Comments</h1>
+        <h1>Comments</h1>
         <CommentForm onCommentAdd={this.handleCommentAdd} />
         <CommentsList data={this.state.data} />
       </div>
@@ -28,9 +28,3 @@ class Comments extends React.Component {
     });
   }
 }
-
-Comments.propTypes = {
-  data: React.PropTypes.array.isRequired,
-};
-
-export default Comments;

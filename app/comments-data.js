@@ -1,4 +1,4 @@
-const commentsData = [{
+export default [{
   id: 1,
   author: "Homer Simpson",
   text: "D'oh!"
@@ -7,5 +7,3 @@ const commentsData = [{
   author: "Bart Simpson",
   text: "Cowabunga"
 }];
-
-export default commentsData;
